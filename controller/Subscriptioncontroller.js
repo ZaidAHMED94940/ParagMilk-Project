@@ -228,7 +228,7 @@ const getAllSubscriptions = async (req, res) => {
 
     try {
         // Convert page_no to number and validate
-        const pageNumber = parseInt(page_no, 10);
+        const pageNumber = parseInt(page_no, 10); 
         
         if (isNaN(pageNumber) || pageNumber < 1) {
             return res.status(400).json({
